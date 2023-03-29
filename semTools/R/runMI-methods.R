@@ -222,8 +222,10 @@ setClass("lavaan.mi", contains = "lavaanList",
                    seed = "integer",      # seed set before running imputations
                    lavListCall = "list",  # store actual call to lavaanList
                    imputeCall = "list",   # store call from imputation, if used
-                   convergence = "list")) # also check SEs and Heywood cases
-
+                   convergence = "list", # also check SEs and Heywood cases
+                   implied = "list"
+         )
+)
 
 
 ##' @name lavaan.mi-class
