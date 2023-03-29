@@ -224,7 +224,8 @@ setClass("lavaan.mi", contains = "lavaanList",
                    imputeCall = "list",   # store call from imputation, if used
                    convergence = "list", # also check SEs and Heywood cases
                    implied = "list"
-         )
+         ),
+         prototype = c(implied = NULL)
 )
 
 
